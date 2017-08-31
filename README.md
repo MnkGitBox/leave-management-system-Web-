@@ -1,6 +1,8 @@
 
 ![](source/ico/app_poster.png)
-![](source/ico/web_version) ![source/ico/powered]()
+
+
+![](source/ico/web_version.png) ![](source/ico/powered.png)
 
 ## Features
 * ###### Easy to handle all leave request from users at any place.
