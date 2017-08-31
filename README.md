@@ -1,2 +1,2 @@
-![](source/app_ico/ico/app_ico.png)
+![](source/ico/app_ico.png)
 # Friendly leave (iOS)
