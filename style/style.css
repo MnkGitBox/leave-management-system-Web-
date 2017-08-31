@@ -1,0 +1,550 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color:#F7FAFB;
+}
+
+/*global*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #C8CDD2;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #C8CDD2;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:   #C8CDD2;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #C8CDD2;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #C8CDD2;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #F3F0F5 inset;
+    -webkit-text-fill-color: #95A5A6 !important;
+}
+
+input:focus{
+  outline: none;
+}
+button{
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition-duration: 0.4s;
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 12px 0 #B4B9C3;
+}
+
+button:after{
+  opacity: 1;
+  padding: 0;
+  transition: all 0.8s;
+  border: none;
+  outline: none;
+}
+button:active{
+  opacity: 0.6;
+  transition: 0s;
+  border: none;
+  outline: none;
+}
+a{
+  cursor: pointer;
+}
+
+/*glabal for single page*/
+.startPage{
+  background-color: #364860;
+}
+.aprroved_body{
+  background: url('../source/web_approved_page.png');
+}
+.rejected_body{
+  background: url('../source/web_rejected_page.png');
+}
+.pending_body{
+  background: url('../source/web_pending_page.png');
+}
+.container_login{
+  margin: auto;
+  background-color: #F3F0F5;
+  width: 50%;
+  height: 400px;
+  margin-top: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.container{
+  margin: auto;
+  width: 90%;
+  overflow: hidden;
+}
+.container_2{
+  margin: auto;
+  width: 50%;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-left: 5%;
+  color: #56637A;
+  /*background-color: #F7F9FB;
+  border-color: #408CCB;
+  border-width: 2px;
+  border-radius: 3px;
+  border-style: solid;*/
+  min-height: 500px;
+}
+
+/*login page*/
+.container_login div{
+  float: left;
+}
+.loginForm h2{
+  margin: auto;
+  margin-left: 75px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  color: #408CCB;
+}
+.loginForm{
+  margin:auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 70px;
+  width:40%;
+  height: 300px;
+
+}
+.loginForm input{
+  margin: 5%;
+  padding: 0;
+  width: 90%;
+  height: 30px;
+  font-size: 14px;
+  color: #3498DB;
+  background-color: #F3F0F5;
+  border: none;
+  border-bottom-color:#C2E0F4;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.loginForm button{
+  margin: auto;
+  margin-left: 40px;
+  margin-top: 60px;
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+  border: none;
+  color: #F3F0F5;
+  background-color: #408CCB;
+  border-radius: 3px;
+}
+.loginForm button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.loginForm button span::after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+.loginForm button:hover span{
+  padding-right: 15px;
+}
+.loginForm button:hover span::after{
+  opacity: 1;
+  right: 0;
+}
+
+.showcaseLogin{
+  background: url(../source/login_web.png);
+  margin:auto;
+  width: 50%;
+  height: 400px;
+}
+
+
+/*home page*/
+/*header section*/
+header{
+  padding-top: 10px;
+  background:#364860;
+  color: #F7F9FB;
+}
+    /*app_ico*/
+header .app_ico{
+  width: 20%;
+}
+header .app_ico .ico{
+  height: 30px;
+  width: 30px;
+}
+
+header .app_ico div{
+  float: left;
+}
+header .app_ico .text h3{
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+/*curr log in profile*/
+header .curr_usr{
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+}
+header .curr_usr img{
+  height: 24px;
+  width:24px;
+  margin-top: 10px;
+  float: left;
+  border-radius: 12px;
+}
+header .curr_usr p{
+  margin: 0;
+  margin-top: 15px;
+  /*vertical-align: baseline;*/
+  margin-left: 10px;
+  font-size: 1vw;
+  float: left;
+}
+header .curr_usr p:hover{
+  color: #56637a;
+  cursor: pointer;
+}
+header .curr_usr .curr_usr_info{
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  margin-top: 47px;
+  background-color: #6BB18C;
+  color: #F3F0F5;
+  font-size: 1vw;
+  visibility: hidden;
+  width: 180px;
+}
+header .curr_usr .curr_usr_info li{
+  padding: 5px;
+  display: block;
+  border-bottom-color:#ECF0F1;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+
+}
+.curr_usr_info .signuotBtn{
+  text-align: center;
+}
+.curr_usr_info .signuotBtn:hover{
+  background-color: #F3F0F5;
+  color: #6BB18C;
+  cursor: pointer;
+}
+
+    /*nav_buttons*/
+header .main_menu{
+  float: right;
+  margin-top: 0;
+  padding-top: 0;
+  margin-right: 80px;
+  margin-bottom: 10px;
+}
+header a{
+  color: #F7F9FB;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+header .main_menu li{
+  float: left;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  padding: 0 20px 0 20px;
+}
+header a:hover{
+  color: #56637a;
+  font-weight: bold;
+}
+header .current{
+  color: #F05F5F;
+}
+header .heading_info{
+  float: left;
+  width: 80%;
+  margin: 10px;
+  margin-top: 1px;
+
+
+}
+header .heading_info h2{
+  margin: auto;
+  padding: 0;
+  text-align: right;
+  font-size: 13px;
+  font-weight: lighter;
+  color: #ECF0F1;
+  float: right;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#heading_info_pending h2{
+  background-color: #16A085;
+}
+#heading_info_rejected h2{
+  background-color: #E74C3C;
+}
+#heading_info_approved h2{
+  background-color: #2980B9;
+}
+
+/*showcase*/
+#showcase{
+  min-height: 400px;
+  background:url('../source/showcase_Background.jpg') no-repeat 0 -25px;
+  text-align: center;
+  color: #F7F9FB;
+}
+#showcase h1{
+  margin-top: 150px;
+  font-size: 55px;
+  text-transform: capitalize;
+}
+#showcase p{
+  font-size: 20px;
+}
+.devider{
+  height: 5px;
+  background-color: #6BB18C;
+}
+/*empty case design*/
+.empty_newsLetter{
+  margin: auto;
+  width: 90%;
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #C8CDD2;
+}
+
+/*requests container*/
+.requests{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.requests .card{
+  float: left;
+  background-color: white;
+  width: 28%;
+  height: 200px;
+  margin: 2.6%;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 1px 2px 6px #B2C8D6;
+}
+  /*inside card*/
+.card .user{
+  margin: 10px 0 0 10px;
+  /*width: 50%;*/
+  /*overflow: hidden;*/
+}
+.card .user div{
+  float: left;
+}
+.card .user img{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.card .user .subUsrDetails{
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 70%;
+  height: 45px;
+  overflow: hidden;
+}
+.card .user .subUsrDetails h2{
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+  color: #56637A;
+  text-transform: capitalize;
+}
+.card .user .subUsrDetails p{
+  margin: 0;
+  padding: 0;
+  margin-top: -3px;
+  font-size: 1vw;
+  color: #D6D6D6;
+}
+
+.card .indicator{
+  float: right;
+}
+
+.card .indicator img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.card .leave{
+  margin: auto;
+  width: 90%;
+  height: 50%;
+  /*margin-bottom: 5px;*/
+  overflow: hidden;
+}
+.card .leave h2{
+  color: #56637A;
+  margin: 0;
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+.card .leave p{
+  color: #9E9D9B;
+  margin: 0;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.card .more{
+  margin: 5px;
+  height: 15%;
+  border-radius: 3px;
+}
+.card .more p{
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: right;
+  margin: 0;
+  margin-right: 10px;
+  padding-top: 6px;
+}
+.card .more a{
+  text-decoration: none;
+  color: #F8F8F8;
+}
+.card .more a:hover{
+  color: #C2E0F4;
+  /*font-weight: bold;*/
+}
+
+.moreObDiv{
+  float: left;
+  margin: auto;
+  padding: 0;
+  margin-top: 210px;
+  margin-right: 3%;
+  margin-left: 3%;
+  visibility: hidden;
+}
+.moreObBtn{
+  margin: 0;
+  background-color: #45A4D0;
+  border-radius: 3px;
+  color: #ECF0F1;
+  box-shadow: none;
+
+}
+
+/*request info page design*/
+
+.details{
+  /*margin: 50px;*/
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.username h3, .leave_name h3, .reason p, .reason h3, .request_day h3, .return_day h3, .rejected_reason, .began_day h3, .rej_usr h3, .rej_date h3, .app_usr h3, .app_date h3{
+  margin: 10px;
+  color: #56637A;
+  font-size: 14px;
+}
+.rejected_reason h3{
+  font-size: 14px;
+}
+.username, .leave_name, .reason, .request_day, .return_day, .began_day, .rej_usr, .rej_date,.rejected_reason, .app_usr, .app_date{
+  border-bottom-color: #D6D6D6;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  padding: 5px;
+}
+#reason{
+  margin: auto;
+  border:none;
+  color: #56637A;
+  font-size: 14px;
+  margin: auto;
+  width: 99%;
+}
+
+#reject_btn{
+  margin: auto;
+  margin: 2.25%;
+  border: none;
+  width: 45%;
+  height: 45px;
+  color: #F7F9FB;
+  font-size: 14px;
+  background-color: #EB7F7D;
+}
+#approved_btn{
+  margin: auto;
+  margin: 2.25%;
+  /*padding: 2.5%;*/
+  border: none;
+  width: 45%;
+  height: 45px;
+  font-size: 14px;
+  color: #F7F9FB;
+  background-color: #67A6DF;
+}
+
+.value{
+  font-size: 14px;
+  color: #888888;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+
+/*footer design*/
+.footerNormal{
+  color: #F7F9FB;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 60px;
+  background-color: #364860;
+  padding: 60px 20px 10px 20px;
+}
+
+.footerSignIn{
+  color: #F7F9FB;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0;
+  padding: 100px 20px 10px 20px;
+}

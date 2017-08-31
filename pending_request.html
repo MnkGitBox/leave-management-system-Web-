@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>info</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script
+    src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js">
+    </script>
+  </head>
+  <body class="pending_body">
+    <header>
+      <div class="container">
+        <div class="app_ico">
+          <div >
+            <img id="ico" src="source/ico/app_ico.png" alt="app_ico" class="ico">
+          </div>
+          <div class="text">
+              <h3>Friendly leave</h3>
+          </div>
+        </div>
+        <div class="heading_info" id="heading_info_pending">
+            <h2>Pending Leave</h2>
+        </div>
+      </div>
+    </header>
+    <div class="container_2">
+      <div class="details">
+      <div class="username">
+          <h3 id="userName">User name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+      </div>
+      <div class="leave_name">
+        <h3 id="leave_name">Leave name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+      </div>
+      <div class="reason">
+        <h3>Reason : </h3>
+        <p id="reason_prag"></p>
+      </div>
+      <div class="request_day">
+        <h3 id="req_date">Request day : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+      </div>
+      <div class="began_day">
+        <h3 id="began_day">Began day : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+      </div>
+      <div class="return_day">
+        <h3 id="ret_date">Return day : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+      </div>
+      <div class="rejected_reason">
+        <h3>Reason if reject: </h3>
+        <textarea name="reason" rows="10" cols="20" id="reason" size = '20'></textarea>
+      </div>
+      <div class="action_button">
+        <button type="submit" name="reject" id="reject_btn"  onclick="performReject()">Reject</button>
+        <button type="submit" name="approve" id="approved_btn" onclick="performApproved()">Approve</button>
+      </div>
+    </div>
+    </div>
+    <footer class="footerNormal">
+      <p>Copyright &copy; 2017 Malith Nadeeshan All Rights Reserved.</p>
+    </footer>
+
+<!-- script attachment -->
+    <script src="fir_config.js"></script>
+    <script src="info_pending.js"></script>
+
+<!--  -->
+  </body>
+</html>
