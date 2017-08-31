@@ -19,7 +19,7 @@
 * JavaScript
 
 ## Usage
-* ###### Goto this [live site](https://project-lms-fb008.firebaseapp.com/signInPage.html)
+* ###### Go to this [live site](https://project-lms-fb008.firebaseapp.com/signInPage.html)
 * ###### Or download this project and open  'index.html'  file using any browser.
 
 ## Login details
