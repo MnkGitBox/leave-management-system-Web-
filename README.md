@@ -1,1 +1,2 @@
-<img src="source/ico/app_poster.png" width = "200">
+
+![](source/ico/app_poster.png)
