@@ -1,2 +1,2 @@
-<img src="source/ico/app_ico.png" width = "30">
+![](source/ico/app_poster.png)
 # Friendly leave (Web)
