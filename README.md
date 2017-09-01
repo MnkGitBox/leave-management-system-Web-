@@ -4,6 +4,10 @@
 
 ![](source/ico/web_version.png) ![](source/ico/powered.png)
 
+<a href = "https://www.youtube.com/watch?v=xRXkgcM2xkQ"><img src="source/ico/webVideo.gif"></a>
+
+* [Full Video](https://www.youtube.com/watch?v=xRXkgcM2xkQ)
+
 ## Features
 * ###### Easy to handle all leave request from users at any place.
 * ###### Firebase realtime database helps to show all request and respond to users in real time.
